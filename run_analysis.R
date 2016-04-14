@@ -41,6 +41,16 @@ allData<- tbl_df(allData)
 # find variables with only meansurements on the mean and std and write the data to meanAndStd.csv
 mean_std_Col<- grep('std\\(\\)|mean\\(\\)',names(allData),value = TRUE)
 meanAndStd<- allData[,c(mean_std_Col,'activity',"subject")]
+newNames<- gsub('[-()]','',names(meanAndStd))
+names(meanAndStd)<- newNames
 write.csv(meanAndStd,'meanAndStd.csv')
 
+meanData<- group_by(meanAndStd,subject,activity)
+
+x<- data.frame()
+for (i in names(meanData)){
+  if (i !='subject'){
+    summarize(meanData,mean(i))
+  }
+}
 
