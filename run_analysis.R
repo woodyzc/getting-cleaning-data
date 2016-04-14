@@ -45,12 +45,11 @@ newNames<- gsub('[-()]','',names(meanAndStd))
 names(meanAndStd)<- newNames
 write.csv(meanAndStd,'meanAndStd.csv')
 
+#group meanAndStd by subject and activity and store it as meanData, then get the mean for each activity 
+# and subject.
 meanData<- group_by(meanAndStd,subject,activity)
+meanData<- summarize_each(meanData,funs(mean))
+write.csv(meanData,'meanData.csv')
 
-x<- data.frame()
-for (i in names(meanData)){
-  if (i !='subject'){
-    summarize(meanData,mean(i))
-  }
-}
+
 
