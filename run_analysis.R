@@ -49,7 +49,7 @@ write.csv(meanAndStd,'meanAndStd.csv')
 # and subject.
 meanData<- group_by(meanAndStd,subject,activity)
 meanData<- summarize_each(meanData,funs(mean))
-write.csv(meanData,'meanData.csv')
+write.table(meanData,'meanData.txt',row.names = FALSE)
 
 
 
