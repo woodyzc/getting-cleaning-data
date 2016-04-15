@@ -1,6 +1,7 @@
-This assignment is part of the course "getting and cleaning data". 
+## This assignment is part of the course "getting and cleaning data". 
 This codebook will explain how the code will run and the result expected. 
 
+## detailed steps
 1. First down load the data from the website and unzip it.
 2. Load both test and train data (actual data, subject), and save them as data frame.
 3. Combind both test and train data together, save it as "allData". In the meantime, combind subject data together and save it as "allSubject".
@@ -13,7 +14,7 @@ This codebook will explain how the code will run and the result expected.
 10. Find variables with only meansurements on the mean and std and write the data to meanAndStd.csv
 11. Group meanAndStd by subject and activity and store it as meanData, then get the mean for each activity and subject. Finally, write the data to meanData.txt.
 
-There are 68 variables in the final data set. They are:
+## There are 68 variables in the final data set. They are:
 
  [1] "subject"                  "activity"                 "tBodyAccmeanX"           
  [4] "tBodyAccmeanY"            "tBodyAccmeanZ"            "tBodyAccstdX"            
