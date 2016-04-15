@@ -11,7 +11,7 @@ This codebook will explain how the code will run and the result expected.
 8. Load activity labels.
 9. Merge allData and activies labels data frame.
 10. Find variables with only meansurements on the mean and std and write the data to meanAndStd.csv
-11. Group meanAndStd by subject and activity and store it as meanData, then get the mean for each activity and subject. Finally, write the data to meanData.csv.
+11. Group meanAndStd by subject and activity and store it as meanData, then get the mean for each activity and subject. Finally, write the data to meanData.txt.
 
 There are 68 variables in the final data set. They are:
 
