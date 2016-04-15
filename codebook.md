@@ -16,26 +16,71 @@ This codebook will explain how the code will run and the result expected.
 
 ## There are 68 variables in the final data set. They are:
 
- [1] "subject"                  "activity"                 "tBodyAccmeanX"           
- [4] "tBodyAccmeanY"            "tBodyAccmeanZ"            "tBodyAccstdX"            
- [7] "tBodyAccstdY"             "tBodyAccstdZ"             "tGravityAccmeanX"        
-[10] "tGravityAccmeanY"         "tGravityAccmeanZ"         "tGravityAccstdX"         
-[13] "tGravityAccstdY"          "tGravityAccstdZ"          "tBodyAccJerkmeanX"       
-[16] "tBodyAccJerkmeanY"        "tBodyAccJerkmeanZ"        "tBodyAccJerkstdX"        
-[19] "tBodyAccJerkstdY"         "tBodyAccJerkstdZ"         "tBodyGyromeanX"          
-[22] "tBodyGyromeanY"           "tBodyGyromeanZ"           "tBodyGyrostdX"           
-[25] "tBodyGyrostdY"            "tBodyGyrostdZ"            "tBodyGyroJerkmeanX"      
-[28] "tBodyGyroJerkmeanY"       "tBodyGyroJerkmeanZ"       "tBodyGyroJerkstdX"       
-[31] "tBodyGyroJerkstdY"        "tBodyGyroJerkstdZ"        "tBodyAccMagmean"         
-[34] "tBodyAccMagstd"           "tGravityAccMagmean"       "tGravityAccMagstd"       
-[37] "tBodyAccJerkMagmean"      "tBodyAccJerkMagstd"       "tBodyGyroMagmean"        
-[40] "tBodyGyroMagstd"          "tBodyGyroJerkMagmean"     "tBodyGyroJerkMagstd"     
-[43] "fBodyAccmeanX"            "fBodyAccmeanY"            "fBodyAccmeanZ"           
-[46] "fBodyAccstdX"             "fBodyAccstdY"             "fBodyAccstdZ"            
-[49] "fBodyAccJerkmeanX"        "fBodyAccJerkmeanY"        "fBodyAccJerkmeanZ"       
-[52] "fBodyAccJerkstdX"         "fBodyAccJerkstdY"         "fBodyAccJerkstdZ"        
-[55] "fBodyGyromeanX"           "fBodyGyromeanY"           "fBodyGyromeanZ"          
-[58] "fBodyGyrostdX"            "fBodyGyrostdY"            "fBodyGyrostdZ"           
-[61] "fBodyAccMagmean"          "fBodyAccMagstd"           "fBodyBodyAccJerkMagmean" 
-[64] "fBodyBodyAccJerkMagstd"   "fBodyBodyGyroMagmean"     "fBodyBodyGyroMagstd"     
-[67] "fBodyBodyGyroJerkMagmean" "fBodyBodyGyroJerkMagstd" 
+ 1                   subject
+2                  activity
+3             tBodyAccmeanX
+4             tBodyAccmeanY
+5             tBodyAccmeanZ
+6              tBodyAccstdX
+7              tBodyAccstdY
+8              tBodyAccstdZ
+9          tGravityAccmeanX
+10         tGravityAccmeanY
+11         tGravityAccmeanZ
+12          tGravityAccstdX
+13          tGravityAccstdY
+14          tGravityAccstdZ
+15        tBodyAccJerkmeanX
+16        tBodyAccJerkmeanY
+17        tBodyAccJerkmeanZ
+18         tBodyAccJerkstdX
+19         tBodyAccJerkstdY
+20         tBodyAccJerkstdZ
+21           tBodyGyromeanX
+22           tBodyGyromeanY
+23           tBodyGyromeanZ
+24            tBodyGyrostdX
+25            tBodyGyrostdY
+26            tBodyGyrostdZ
+27       tBodyGyroJerkmeanX
+28       tBodyGyroJerkmeanY
+29       tBodyGyroJerkmeanZ
+30        tBodyGyroJerkstdX
+31        tBodyGyroJerkstdY
+32        tBodyGyroJerkstdZ
+33          tBodyAccMagmean
+34           tBodyAccMagstd
+35       tGravityAccMagmean
+36        tGravityAccMagstd
+37      tBodyAccJerkMagmean
+38       tBodyAccJerkMagstd
+39         tBodyGyroMagmean
+40          tBodyGyroMagstd
+41     tBodyGyroJerkMagmean
+42      tBodyGyroJerkMagstd
+43            fBodyAccmeanX
+44            fBodyAccmeanY
+45            fBodyAccmeanZ
+46             fBodyAccstdX
+47             fBodyAccstdY
+48             fBodyAccstdZ
+49        fBodyAccJerkmeanX
+50        fBodyAccJerkmeanY
+51        fBodyAccJerkmeanZ
+52         fBodyAccJerkstdX
+53         fBodyAccJerkstdY
+54         fBodyAccJerkstdZ
+55           fBodyGyromeanX
+56           fBodyGyromeanY
+57           fBodyGyromeanZ
+58            fBodyGyrostdX
+59            fBodyGyrostdY
+60            fBodyGyrostdZ
+61          fBodyAccMagmean
+62           fBodyAccMagstd
+63  fBodyBodyAccJerkMagmean
+64   fBodyBodyAccJerkMagstd
+65     fBodyBodyGyroMagmean
+66      fBodyBodyGyroMagstd
+67 fBodyBodyGyroJerkMagmean
+68  fBodyBodyGyroJerkMagstd
